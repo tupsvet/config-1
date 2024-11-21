@@ -6,10 +6,7 @@
         "command": "ls"
     },
     {
-        "command": "mv my.txt documents/"
-    },
-    {
-        "command": "tail -5 log.txt"
+        "command": "tail -5 secrets.txt"
     },
     {
         "command": "du ."
@@ -24,16 +21,22 @@
         "command": "exit"
     },
     {
-        "command": "ды"
+        "command": "ls"
     },
     {
-        "command": "s"
+        "command": "cd fold"
     },
     {
         "command": "ls"
     },
     {
-        "command": "cd"
+        "command": "mv file.txt ../file.txt"
+    },
+    {
+        "command": "ls"
+    },
+    {
+        "command": "cd .."
     },
     {
         "command": "ls"
@@ -42,7 +45,25 @@
         "command": "cd user"
     },
     {
+        "command": "tail -5 "
+    },
+    {
         "command": "ls"
+    },
+    {
+        "command": "tail -5 secrets.txt"
+    },
+    {
+        "command": "ls"
+    },
+    {
+        "command": "cd .."
+    },
+    {
+        "command": "ls"
+    },
+    {
+        "command": "exir"
     },
     {
         "command": "exit"
