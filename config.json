@@ -1,0 +1,5 @@
+{
+    "fs_path": "my_zip_tes.zip",
+    "log_path": "session_log.json",
+    "startup_script_path": "startup_script.txt"
+}

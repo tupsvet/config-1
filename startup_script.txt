@@ -1,0 +1,13 @@
+cd user
+
+ls
+
+tail -5 secrets.txt
+
+du .
+
+cd /
+
+ls
+
+exit

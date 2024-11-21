@@ -1,0 +1,50 @@
+[
+    {
+        "command": "cd user"
+    },
+    {
+        "command": "ls"
+    },
+    {
+        "command": "mv my.txt documents/"
+    },
+    {
+        "command": "tail -5 log.txt"
+    },
+    {
+        "command": "du ."
+    },
+    {
+        "command": "cd /"
+    },
+    {
+        "command": "ls"
+    },
+    {
+        "command": "exit"
+    },
+    {
+        "command": "ды"
+    },
+    {
+        "command": "s"
+    },
+    {
+        "command": "ls"
+    },
+    {
+        "command": "cd"
+    },
+    {
+        "command": "ls"
+    },
+    {
+        "command": "cd user"
+    },
+    {
+        "command": "ls"
+    },
+    {
+        "command": "exit"
+    }
+]
