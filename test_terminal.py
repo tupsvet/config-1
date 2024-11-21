@@ -6,21 +6,32 @@ import os
 
 @pytest.fixture
 def terminal():
-    fs_path = 'my_zip_tes.zip'
+    fs_path = 'my_zip_test.zip'
+    with ZipFile(fs_path, 'w') as zip_file:
+        pass 
     t = MyTerminal(ZipFile(fs_path, 'a'), 'test_log.json')
-    return t
+    yield t
+    t.fs.close()
+    os.remove(fs_path)
 
 
 def test_mv_1(terminal):
     terminal.fs.writestr('test_file.txt', 'content')
+    terminal.fs.close()
+    terminal.fs = ZipFile('my_zip_test.zip', 'a')
     terminal.mv(['test_file.txt', 'new_test_file.txt'])
     assert 'new_test_file.txt' in terminal.fs.namelist()
     assert 'test_file.txt' not in terminal.fs.namelist()
 
 
 def test_mv_2(terminal):
+    terminal.fs.writestr('dir/', '')
     terminal.fs.writestr('test_file.txt', 'content')
+    terminal.fs.close()
+    terminal.fs = ZipFile('my_zip_test.zip', 'a')
     terminal.mv(['test_file.txt', 'dir/'])
+    terminal.fs.close()
+    terminal.fs = ZipFile('my_zip_test.zip', 'r')
     assert 'dir/test_file.txt' in terminal.fs.namelist()
     assert 'test_file.txt' not in terminal.fs.namelist()
 
