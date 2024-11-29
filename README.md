@@ -119,5 +119,13 @@ pytest==8.3.3
 ### Тестирование  
 Для запуска тестов выполните:  
 ```bash
-python -m pytest
 ```
+
+---
+### Пример работы эмулятора
+![image](https://github.com/user-attachments/assets/90333d10-4c9b-4eaf-9732-96fcb52e8476)
+
+### РЕзультаты тестирования
+![image](https://github.com/user-attachments/assets/afa971da-594f-4d99-8a48-5437af8e7459)
+
+
